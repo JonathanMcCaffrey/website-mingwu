@@ -2,7 +2,7 @@
 title: '_rainbowinacup.webp'
 title_t: '[title]'
 image: 'rainbowinacup.webp'
-date: '_rainbowinacup.webp'
+not_date: '_rainbowinacup.webp'
 date_t: '[date]'
 tags: ['art', 'artwork', 'collage']
 price: '100'

@@ -2,7 +2,7 @@
 title: '_swingingcereal.webp'
 title_t: '[title]'
 image: 'swingingcereal.webp'
-date: '_swingingcereal.webp'
+not_date: '_swingingcereal.webp'
 date_t: '[date]'
 tags: ['art', 'artwork', 'collage']
 price: '100'

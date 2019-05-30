@@ -2,7 +2,7 @@
 title: '_mysteriouswoman.webp'
 title_t: '[title]'
 image: 'mysteriouswoman.webp'
-date: '_mysteriouswoman.webp'
+not_date: '_mysteriouswoman.webp'
 date_t: '[date]'
 tags: ['art', 'artwork', 'collage']
 price: '100'

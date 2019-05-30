@@ -2,7 +2,7 @@
 title: '_galaxytouch1.webp'
 title_t: '[title]'
 image: 'galaxytouch1.webp'
-date: '_galaxytouch1.webp'
+not_date: '_galaxytouch1.webp'
 date_t: '[date]'
 tags: ['art', 'artwork', 'collage']
 price: '100'

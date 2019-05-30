@@ -2,7 +2,7 @@
 title: '_paintthestars.webp'
 title_t: '[title]'
 image: 'paintthestars.webp'
-date: '_paintthestars.webp'
+not_date: '_paintthestars.webp'
 date_t: '[date]'
 tags: ['art', 'artwork', 'collage']
 price: '100'
