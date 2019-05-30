@@ -1,0 +1,75 @@
+.spiral {
+    overflow: hidden;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.spiralOffset {
+    transform: rotate(0);
+
+    animation: spin 60s linear infinite;
+    //animation-delay: 4s;
+
+    opacity: 0.8;
+    filter: blur(0px);
+
+    margin: 10%;
+
+    padding-bottom: 500px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+/*
+.spiralOffset {
+    transform: rotate(0) scale(0.2);
+
+    animation: spin 6s ease-in-out infinite;
+    //animation-delay: 4s;
+
+    opacity: 0.8;
+    filter: blur(10px);
+
+    margin: 10%;
+
+    align-content: center;
+    justify-content: center;
+}*/
+
+.spiralContainer {
+    width: 450px;
+    height: 450px;
+
+    position: relative;
+
+    top: 25%;
+    left: 25%;
+
+    margin-right: -450px;
+    margin-bottom: -450px;
+
+    border: 22px solid pink;
+
+    filter: blur(4px);
+}
+
+.spiralContainer:hover {
+    border: 2px solid pink;
+    filter: blur(0px);
+}
+
+@for $i from 1 through 1000 {
+    div:nth-child(#{$i}) .spiralContainer {
+        transform: rotate(calc(#{$i+3}deg * 25))
+            translateY(
+                calc((#{$i+3}px + #{$i+3}px * 1.05 + #{$i+3}px * 1.05) * 5)
+            )
+            scale(calc((#{$i}) * 0.009 + 0.08))
+            rotate(180deg);
+    }
+}

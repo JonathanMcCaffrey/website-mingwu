@@ -1,0 +1,5 @@
+export const SELECT_IMAGE = 'SELECT_IMAGE'
+export const DESELECT_IMAGE = 'SELECT_IMAGE'
+
+export const BACKGROUND = 'BACKGROUND'
+export const DEBACKGROUND = 'DEBACKGROUND'
