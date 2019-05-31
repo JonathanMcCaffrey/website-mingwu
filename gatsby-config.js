@@ -93,9 +93,10 @@ module.exports = {
         name: `MingWu`,
         short_name: `mingwu`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`
+        background_color: `#000`,
+        theme_color: `#551A8B`,
+        display: `standalone`,
+        icon: `src/images/website/icon.jpg`
       }
     },
     // Add after these plugins if used
