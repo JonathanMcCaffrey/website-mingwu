@@ -37,6 +37,6 @@ npm start
 
 # Demo Link
 
-[Link](https://5cef4aaf680f198a9dcb5f35--amazing-franklin-98f11b.netlify.com/)
+[Link](https://jonathanmccaffrey.github.io/website-mingwu/)
 
 _Website built first for Google Chrome_
