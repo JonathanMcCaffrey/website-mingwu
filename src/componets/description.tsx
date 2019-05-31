@@ -12,7 +12,7 @@ export default class Component extends React.Component<ComponentProps, {}> {
   public render() {
     return (
       <div className={styles.textContainer}>
-        <p
+        <div
           dangerouslySetInnerHTML={{
             __html: this.props.data.about.html
           }}
