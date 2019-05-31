@@ -2,7 +2,7 @@ import * as React from "react";
 import styles from "../styles/_global.module.scss";
 
 interface ComponentProps {
-  data: {};
+  data: { about: any };
 }
 
 export default class Component extends React.Component<ComponentProps, {}> {
