@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import styles from '../styles/_global.module.scss';
 
 interface ComponentProps {
-  data: {};
+  data: any;
+  state: any;
 }
 
 class Component extends React.Component<ComponentProps, {}> {

@@ -8,12 +8,10 @@ import FullScreenImage from './fullscreenImage';
 
 interface ComponentProps {
   data: any;
-  dispatcH: any;
+  dispatch: any;
 }
 
-interface ComponentState {}
-
-class Component extends React.Component<ComponentProps, ComponentState> {
+class Component extends React.Component<ComponentProps, {}> {
   constructor(props: any) {
     super(props);
   }

@@ -15,9 +15,9 @@ import { Parallax } from 'react-scroll-parallax';
 import { getFluidImage } from '../utils';
 
 interface ComponentProps {
-  data: any;
   dispatch: any;
   state: any;
+  data: { websiteImages: any; gallery: any; about: any };
 }
 
 class Component extends React.Component<ComponentProps, {}> {
@@ -130,7 +130,7 @@ class Component extends React.Component<ComponentProps, {}> {
             <TextBackground data={this.props.data} />
           </div>
           <div className={styles.spiral}>
-            <Spiral data={this.props.data} />
+            <Spiral data={this.props.data} dispatch={this.props.dispatch} />
           </div>
           <div className={styles.sidebar}>
             <Sidebar data={this.props.data} />
@@ -142,7 +142,7 @@ class Component extends React.Component<ComponentProps, {}> {
             <Description data={this.props.data} />
           </div>
           <div className={styles.gallery}>
-            <Gallery data={this.props.data} />
+            <Gallery data={this.props.data} dispatch={this.props.dispatch} />
           </div>
           <div className={styles.footer}>
             <Footer data={this.props.data} />

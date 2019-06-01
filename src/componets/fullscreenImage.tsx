@@ -5,10 +5,7 @@ import * as galleryActions from '../actions/galleryActions';
 import styles from '../styles/_global.module.scss';
 
 interface ComponentProps {
-  data: {
-    gallery: any;
-    content: any;
-  };
+  data: any;
   dispatch: any;
   state: any;
 }

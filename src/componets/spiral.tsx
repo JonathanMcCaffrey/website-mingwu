@@ -6,7 +6,8 @@ import styles from '../styles/_global.module.scss';
 import FullScreenImage from './fullscreenImage';
 
 interface ComponentProps {
-  data: { dispatch: any };
+  data: { gallery: any };
+  dispatch: any;
 }
 
 const handleClick = (props: any, key: any) => {
@@ -29,7 +30,7 @@ const renderImages = (props: any, gallery: any) => {
       imageList.push(
         <div
           key={imageList.length}
-          onClick={e => handleClick(props, imageNode.node.id, e)}
+          onClick={e => handleClick(props, imageNode.node.id)}
         >
           <Img
             className={styles.spiralContainer}
