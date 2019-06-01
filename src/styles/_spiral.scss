@@ -1,28 +1,30 @@
 .spiral {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 @keyframes spin {
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .spiralOffset {
-    transform: rotate(0);
+  transform: rotate(0);
 
-    animation: spin 60s linear infinite;
-    //animation-delay: 4s;
+  animation: spin 60s linear infinite;
+  //animation-delay: 4s;
 
-    opacity: 0.8;
-    filter: blur(0px);
+  opacity: 0.8;
+  filter: blur(0px);
 
-    margin: 10%;
+  margin: 10%;
 
-    padding-bottom: 500px;
+  padding-bottom: 500px;
 
-    align-content: center;
-    justify-content: center;
+  margin-bottom: -100px;
+
+  align-content: center;
+  justify-content: center;
 }
 
 /*
@@ -42,34 +44,34 @@
 }*/
 
 .spiralContainer {
-    width: 450px;
-    height: 450px;
+  width: 450px;
+  height: 450px;
 
-    position: relative;
+  position: relative;
 
-    top: 25%;
-    left: 25%;
+  top: 25%;
+  left: 25%;
 
-    margin-right: -450px;
-    margin-bottom: -450px;
+  margin-top: 200px;
 
-    border: 22px solid pink;
+  margin-right: -450px;
+  margin-bottom: -450px;
 
-    filter: blur(4px);
+  border: 22px solid pink;
+
+  filter: blur(1px);
 }
 
 .spiralContainer:hover {
-    border: 2px solid pink;
-    filter: blur(0px);
+  border: 2px solid pink;
+  filter: blur(0px);
 }
 
 @for $i from 1 through 1000 {
-    div:nth-child(#{$i}) .spiralContainer {
-        transform: rotate(calc(#{$i+3}deg * 25))
-            translateY(
-                calc((#{$i+3}px + #{$i+3}px * 1.05 + #{$i+3}px * 1.05) * 5)
-            )
-            scale(calc((#{$i}) * 0.009 + 0.08))
-            rotate(180deg);
-    }
+  div:nth-child(#{$i}) .spiralContainer {
+    transform: rotate(calc(#{$i+3}deg * 25))
+      translateY(calc((#{$i+3}px + #{$i+3}px * 1.05 + #{$i+3}px * 1.05) * 5))
+      scale(calc((#{$i}) * 0.009 + 0.3))
+      rotate(180deg);
+  }
 }

@@ -1,20 +1,23 @@
-import BackgroundImage from "gatsby-background-image";
-import Img from "gatsby-image";
-import * as React from "react";
-import { connect } from "react-redux";
-import * as effectActions from "../actions/effectActions";
-import styles from "../styles/_global.module.scss";
-import Sidebar from "../componets/sidebar";
-import Spiral from "../componets/spiral";
-import Gallery from "../componets/gallery";
-import Header from "../componets/header";
-import Portrait from "../componets/portrait";
-import Footer from "../componets/footer";
-import TextBackground from "../componets/textbackground";
-import Description from "../componets/description";
+import Img from 'gatsby-image';
+import * as React from 'react';
+import { connect } from 'react-redux';
+import * as effectActions from '../actions/effectActions';
+import styles from '../styles/_global.module.scss';
+import Sidebar from '../componets/sidebar';
+import Spiral from '../componets/spiral';
+import Gallery from '../componets/gallery';
+import Header from '../componets/header';
+import Portrait from '../componets/portrait';
+import Footer from '../componets/footer';
+import TextBackground from '../componets/textbackground';
+import Description from '../componets/description';
+import { Parallax } from 'react-scroll-parallax';
+import { getFluidImage } from '../utils';
 
 interface ComponentProps {
-  data: {};
+  data: any;
+  dispatch: any;
+  state: any;
 }
 
 class Component extends React.Component<ComponentProps, {}> {
@@ -37,16 +40,15 @@ class Component extends React.Component<ComponentProps, {}> {
 
   componentDidMount = () => {
     this.hidingTimer();
+    window.addEventListener('scroll', this.handleHideEffects);
   };
 
-  handleMouseMove = (store: any) => {
-    clearTimeout(this.timerId);
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleHideEffects);
+  }
 
-    var isback = false;
-    if (store.effect != null) {
-      isback = this.props.state.effect[this.props.state.effect.length - 1]
-        .background;
-    }
+  handleHideEffects = (store: any) => {
+    clearTimeout(this.timerId);
 
     if (
       this.props.state.effect[this.props.state.effect.length - 1].background
@@ -58,9 +60,69 @@ class Component extends React.Component<ComponentProps, {}> {
   };
 
   public render() {
+    const { websiteImages } = this.props.data;
+
     return (
       <div className={styles.page}>
-        <div className={styles.wrapper} onMouseMove={this.handleMouseMove}>
+        <div className={styles.collageEffect}>
+          <Parallax x={[0, -10]} y={[-20, 10]}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i1}
+                fluid={getFluidImage(websiteImages, '1.webp')}
+              />
+            </div>
+          </Parallax>
+
+          <Parallax x={[0, 10]} y={[40, -30]}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i2}
+                fluid={getFluidImage(websiteImages, '2.webp')}
+              />
+            </div>
+          </Parallax>
+
+          <Parallax x={[-10, 0]} y={[-20, 20]} className={styles.backImage}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i3}
+                fluid={getFluidImage(websiteImages, '3.webp')}
+              />
+            </div>
+          </Parallax>
+        </div>
+
+        <div className={styles.collageEffect2}>
+          <Parallax x={[0, -10]} y={[-20, 10]}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i4}
+                fluid={getFluidImage(websiteImages, '1.webp')}
+              />
+            </div>
+          </Parallax>
+
+          <Parallax x={[0, 10]} y={[40, -30]}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i5}
+                fluid={getFluidImage(websiteImages, '2.webp')}
+              />
+            </div>
+          </Parallax>
+
+          <Parallax x={[-10, 0]} y={[-20, 20]} className={styles.backImage}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i6}
+                fluid={getFluidImage(websiteImages, '3.webp')}
+              />
+            </div>
+          </Parallax>
+        </div>
+
+        <div className={styles.wrapper} onMouseMove={this.handleHideEffects}>
           <div className={styles.header}>
             <Header data={this.props.data} />
           </div>

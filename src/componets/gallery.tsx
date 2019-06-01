@@ -1,18 +1,14 @@
-import BackgroundImage from "gatsby-background-image";
-import Img from "gatsby-image";
-import * as React from "react";
-import { connect } from "react-redux";
-import * as galleryActions from "../actions/galleryActions";
-import styles from "../styles/_global.module.scss";
-import * as types from "../types";
-import FullScreenImage from "./fullscreenImage";
+import BackgroundImage from 'gatsby-background-image';
+import Img from 'gatsby-image';
+import * as React from 'react';
+import { connect } from 'react-redux';
+import * as galleryActions from '../actions/galleryActions';
+import styles from '../styles/_global.module.scss';
+import FullScreenImage from './fullscreenImage';
 
 interface ComponentProps {
-  data: {
-    gallery: any;
-    content: any;
-  };
-  dispatch: any;
+  data: any;
+  dispatcH: any;
 }
 
 interface ComponentState {}
@@ -22,7 +18,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
     super(props);
   }
 
-  selectedImageKey = "";
+  selectedImageKey = '';
 
   handleClick = (id: string) => {
     this.props.dispatch(galleryActions.selectImage(id));
@@ -48,14 +44,14 @@ class Component extends React.Component<ComponentProps, ComponentState> {
 
       return (
         <div
-          key={"d" + image.node.id}
+          key={'d' + image.node.id}
           onClick={e => this.handleClick(image.node.id)}
           className={styles.collageButton}
         >
           <Img
             fluid={image.node.childImageSharp.fluid}
             className={styles.collageContainer}
-            key={"i" + image.node.id}
+            key={'i' + image.node.id}
           />
         </div>
       );
@@ -69,16 +65,16 @@ class Component extends React.Component<ComponentProps, ComponentState> {
           this.selectedImageKey = image.node.id;
           return (
             <div
-              key={"d" + image.node.id}
+              key={'d' + image.node.id}
               className={styles.collageButton}
               onClick={e => this.handleClick(image.node.id)}
             >
               <Img
                 className={styles.collageContainer}
                 fluid={image.node.childImageSharp.fluid}
-                key={"i" + image.node.id}
+                key={'i' + image.node.id}
               />
-              <div className={styles.imageTitle} key={"p" + image.node.id}>
+              <div className={styles.imageTitle} key={'p' + image.node.id}>
                 {frontmatter.title}
               </div>
             </div>
@@ -111,8 +107,6 @@ class Component extends React.Component<ComponentProps, ComponentState> {
   };
 
   public render() {
-    const { gallery, content } = this.props.data;
-
     return (
       <div>
         <FullScreenImage data={this.props.data} />

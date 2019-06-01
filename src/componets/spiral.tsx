@@ -1,16 +1,12 @@
-import Img from "gatsby-image";
-import * as React from "react";
-import { connect } from "react-redux";
-import * as galleryActions from "../actions/galleryActions";
-import styles from "../styles/_global.module.scss";
-import FullScreenImage from "./fullscreenImage";
+import Img from 'gatsby-image';
+import * as React from 'react';
+import { connect } from 'react-redux';
+import * as galleryActions from '../actions/galleryActions';
+import styles from '../styles/_global.module.scss';
+import FullScreenImage from './fullscreenImage';
 
 interface ComponentProps {
-  data: {
-    gallery: any;
-    content: any;
-  };
-  dispatch: any;
+  data: { dispatch: any };
 }
 
 const handleClick = (props: any, key: any) => {
@@ -38,7 +34,7 @@ const renderImages = (props: any, gallery: any) => {
           <Img
             className={styles.spiralContainer}
             fluid={imageNode.node.childImageSharp.fluid}
-            key={"s" + imageNode.node.id}
+            key={'s' + imageNode.node.id}
           />
         </div>
       );
