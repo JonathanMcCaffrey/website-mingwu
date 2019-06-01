@@ -65,7 +65,16 @@ class Component extends React.Component<ComponentProps, {}> {
     return (
       <div className={styles.page}>
         <div className={styles.collageEffect}>
-          <Parallax x={[0, -10]} y={[-20, 10]}>
+          <Parallax x={[-10, 10]} y={[-10, 30]} className={styles.backImage}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i3}
+                fluid={getFluidImage(websiteImages, '3.webp')}
+              />
+            </div>
+          </Parallax>
+
+          <Parallax x={[10, 0]} y={[0, 20]}>
             <div className={styles.backImage}>
               <Img
                 className={styles.i1}
@@ -82,15 +91,6 @@ class Component extends React.Component<ComponentProps, {}> {
               />
             </div>
           </Parallax>
-
-          <Parallax x={[-10, 0]} y={[-20, 20]} className={styles.backImage}>
-            <div className={styles.backImage}>
-              <Img
-                className={styles.i3}
-                fluid={getFluidImage(websiteImages, '3.webp')}
-              />
-            </div>
-          </Parallax>
         </div>
 
         <div className={styles.collageEffect}>
@@ -98,25 +98,25 @@ class Component extends React.Component<ComponentProps, {}> {
             <div className={styles.backImage}>
               <Img
                 className={styles.i4}
-                fluid={getFluidImage(websiteImages, '1.webp')}
+                fluid={getFluidImage(websiteImages, '4.webp')}
               />
             </div>
           </Parallax>
 
-          <Parallax x={[0, 10]} y={[40, -30]}>
-            <div className={styles.backImage}>
-              <Img
-                className={styles.i5}
-                fluid={getFluidImage(websiteImages, '2.webp')}
-              />
-            </div>
-          </Parallax>
-
-          <Parallax x={[-10, 0]} y={[-20, 20]} className={styles.backImage}>
+          <Parallax x={[-10, 0]} y={[-30, 10]} className={styles.backImage}>
             <div className={styles.backImage}>
               <Img
                 className={styles.i6}
-                fluid={getFluidImage(websiteImages, '3.webp')}
+                fluid={getFluidImage(websiteImages, '6.webp')}
+              />
+            </div>
+          </Parallax>
+
+          <Parallax x={[-5, 10]} y={[-30, -35]}>
+            <div className={styles.backImage}>
+              <Img
+                className={styles.i5}
+                fluid={getFluidImage(websiteImages, '5.webp')}
               />
             </div>
           </Parallax>

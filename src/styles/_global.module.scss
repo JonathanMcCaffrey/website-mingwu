@@ -178,6 +178,12 @@ html {
 
   margin-bottom: calc(-100vh - 15vh);
   width: 100vw;
+
+  margin-right: auto;
+
+  margin-left: auto;
+  max-width: 1000px;
+
   margin-top: calc(15vh);
 }
 
@@ -191,6 +197,9 @@ html {
 .backImage {
   position: relative;
   overflow: visible;
+
+  max-width: 1000px;
+  margin: auto;
 }
 
 .backImage .image {
@@ -229,7 +238,8 @@ html {
 
 .i4 {
   top: -100px;
-  left: 20vw;
+
+  left: -10vw;
 
   margin-bottom: -100%;
 
@@ -238,7 +248,8 @@ html {
 
 .i5 {
   top: 500px;
-  left: 10vw;
+
+  left: -20vw;
 
   margin-bottom: -100%;
 
@@ -250,7 +261,7 @@ html {
 
   margin-bottom: -100%;
 
-  left: -30vw;
+  left: 30vw;
 
   transform: scale(0.8);
 }
