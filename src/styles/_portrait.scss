@@ -3,9 +3,9 @@
   background-size: 0 0;
   overflow: hidden;
 
-  background-color: pink;
   overflow: hidden;
-  height: 1000px;
+  height: 80vh;
+  max-height: 100vw;
 }
 
 .portraitElementContainer {
@@ -24,11 +24,4 @@
   height: 100%;
   margin-bottom: calc(-100% - 10px);
   margin-right: calc(-100% + 20px);
-}
-
-.pinkball {
-  margin-right: -40px;
-  bottom: -340px;
-  margin-left: auto;
-  position: relative;
 }

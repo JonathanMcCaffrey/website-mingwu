@@ -1,17 +1,21 @@
 .collageGrid {
   display: grid;
   margin-top: 100px;
-  max-width: 99vw;
-  grid-column-gap: 20px;
-  grid-row-gap: 50px;
   grid-template-columns: 1fr;
   align-items: center;
+
+  max-width: 100vw;
+  margin: auto;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 502px) {
   .collageGrid {
     margin: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+
     padding: 50px;
+    max-width: 99vw;
   }
 }
 

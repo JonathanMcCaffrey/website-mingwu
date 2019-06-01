@@ -7,6 +7,15 @@
 @import 'sidebar';
 @import 'spiral';
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .header {
   grid-area: header;
 }
@@ -165,19 +174,18 @@
 .collageEffect {
   position: relative;
   overflow: visible;
-  height: 1000vh;
-  margin-bottom: -1010vh;
+  height: 100vh;
+
+  margin-bottom: calc(-100vh - 15vh);
   width: 100vw;
-  margin-top: 10vh;
+  margin-top: calc(15vh);
 }
 
-.collageEffect2 {
-  position: relative;
-  overflow: visible;
-  height: 1000vh;
-  margin-bottom: -1200vh;
-  width: 100vw;
-  margin-top: 200vh;
+.collageEffect:nth-child(2) {
+  height: 100vh;
+
+  margin-top: calc(190vh);
+  margin-bottom: calc(-100vh - 190vh);
 }
 
 .backImage {

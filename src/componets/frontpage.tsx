@@ -93,7 +93,7 @@ class Component extends React.Component<ComponentProps, {}> {
           </Parallax>
         </div>
 
-        <div className={styles.collageEffect2}>
+        <div className={styles.collageEffect}>
           <Parallax x={[0, -10]} y={[-20, 10]}>
             <div className={styles.backImage}>
               <Img
