@@ -144,9 +144,9 @@ class Component extends React.Component<ComponentProps, {}> {
           <div className={styles.gallery}>
             <Gallery data={this.props.data} dispatch={this.props.dispatch} />
           </div>
-          <div className={styles.footer}>
-            <Footer data={this.props.data} />
-          </div>
+        </div>
+        <div className={styles.footer}>
+          <Footer data={this.props.data} />
         </div>
       </div>
     );

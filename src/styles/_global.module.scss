@@ -9,42 +9,52 @@
 
 .header {
   grid-area: header;
-  z-index: 100;
+  z-index: 4;
 }
 
 .spiral {
+  z-index: 1;
   grid-area: spiral;
 }
 
 .sidebar {
+  z-index: 1;
   grid-area: sidebar;
 }
 
 .portrait {
+  z-index: 1;
   grid-area: portrait;
 }
 
 .description {
+  z-index: 1;
   grid-area: description;
 }
 
 .gallery {
+  z-index: 1;
   grid-area: gallery;
 }
 
 .footer {
   grid-area: footer;
+  z-index: -3;
 }
 
 .spiral {
+  z-index: 1;
   grid-area: spiral;
 }
 
 .wrapper {
+  z-index: -2;
+
   width: 100vw;
   display: grid;
   margin: auto;
   overflow: hidden;
+  background-color: white;
 
   grid-column-gap: 20px;
   grid-row-gap: 150px;
@@ -61,6 +71,7 @@
   color: #444;
 
   align-items: center;
+  margin-bottom: 200px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -122,7 +133,7 @@
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  z-index: -3;
+  z-index: 0;
 
   transform: rotate(0deg);
 
@@ -161,27 +172,26 @@
 }
 
 .collageEffect {
-  z-index: -3;
   position: relative;
   overflow: visible;
   height: 1000vh;
   margin-bottom: -1010vh;
   width: 100vw;
   margin-top: 10vh;
+  z-index: 3;
 }
 
 .collageEffect2 {
-  z-index: -3;
   position: relative;
   overflow: visible;
   height: 1000vh;
   margin-bottom: -1200vh;
   width: 100vw;
   margin-top: 200vh;
+  z-index: 3;
 }
 
 .backImage {
-  z-index: -3;
   position: relative;
   overflow: visible;
 }
@@ -189,7 +199,6 @@
 .backImage .image {
   position: absolute;
 
-  z-index: -3;
   margin-bottom: -100%;
 }
 
