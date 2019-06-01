@@ -9,31 +9,25 @@
 
 .header {
   grid-area: header;
-  z-index: 4;
 }
 
 .spiral {
-  z-index: 1;
   grid-area: spiral;
 }
 
 .sidebar {
-  z-index: 1;
   grid-area: sidebar;
 }
 
 .portrait {
-  z-index: 1;
   grid-area: portrait;
 }
 
 .description {
-  z-index: 1;
   grid-area: description;
 }
 
 .gallery {
-  z-index: 1;
   grid-area: gallery;
 }
 
@@ -42,18 +36,11 @@
   z-index: -3;
 }
 
-.spiral {
-  z-index: 1;
-  grid-area: spiral;
-}
-
 .page {
   overflow: hidden;
 }
 
 .wrapper {
-  z-index: -2;
-
   width: 100vw;
   display: grid;
   margin: auto;
@@ -182,7 +169,6 @@
   margin-bottom: -1010vh;
   width: 100vw;
   margin-top: 10vh;
-  z-index: 3;
 }
 
 .collageEffect2 {
@@ -192,7 +178,6 @@
   margin-bottom: -1200vh;
   width: 100vw;
   margin-top: 200vh;
-  z-index: 3;
 }
 
 .backImage {
