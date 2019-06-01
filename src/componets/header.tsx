@@ -1,6 +1,6 @@
-import * as React from "react";
-import { connect } from "react-redux";
-import styles from "../styles/_global.module.scss";
+import * as React from 'react';
+import { connect } from 'react-redux';
+import styles from '../styles/_global.module.scss';
 
 interface ComponentProps {
   data: {};

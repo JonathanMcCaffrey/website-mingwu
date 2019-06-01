@@ -1,5 +1,4 @@
-import { DESELECT_IMAGE, SELECT_IMAGE } from "../types";
-import console from "console";
+import { DESELECT_IMAGE, SELECT_IMAGE } from '../types';
 
 export const deselectImage = () => ({
   type: SELECT_IMAGE

@@ -1,6 +1,6 @@
-import * as React from "react";
-import { connect } from "react-redux";
-import styles from "../styles/_global.module.scss";
+import * as React from 'react';
+import { connect } from 'react-redux';
+import styles from '../styles/_global.module.scss';
 
 interface ComponentProps {
   data: {};
@@ -16,20 +16,20 @@ class Component extends React.Component<ComponentProps, {}> {
         .background;
     }
     var list = [
-      "Collages",
-      "Art",
-      "Photography",
-      "Ottawa",
-      "...",
-      "😉",
-      "🐱",
-      "🎨",
-      "🐶",
-      "📷",
-      "✒️",
-      "🖍️",
-      "~~~",
-      "---"
+      'Collages',
+      'Art',
+      'Photography',
+      'Ottawa',
+      '...',
+      '😉',
+      '🐱',
+      '🎨',
+      '🐶',
+      '📷',
+      '✒️',
+      '🖍️',
+      '~~~',
+      '---'
     ];
 
     if (isback)
@@ -43,7 +43,7 @@ class Component extends React.Component<ComponentProps, {}> {
               }
 
               <p
-                key={"p" + listOfText.length}
+                key={'p' + listOfText.length}
                 style={{
                   transform: `translate(${Math.random() * 200 -
                     100}px, ${Math.random() * 200 -
@@ -68,7 +68,7 @@ class Component extends React.Component<ComponentProps, {}> {
               }
 
               <p
-                key={"p" + listOfText.length}
+                key={'p' + listOfText.length}
                 style={{
                   transform: `translate(${Math.random() * 200 -
                     100}px, ${Math.random() * 200 -

@@ -1,5 +1,5 @@
-import * as React from 'react'
+import * as React from 'react';
 
-const MainLayout: React.SFC = ({ children }) => <div>{children}</div>
+const MainLayout: React.SFC = ({ children }) => <div>{children}</div>;
 
-export default MainLayout
+export default MainLayout;

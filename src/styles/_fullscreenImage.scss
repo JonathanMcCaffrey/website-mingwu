@@ -1,74 +1,72 @@
 .fullScreen {
-    position: fixed;
-
-    z-index: 3000;
-
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    overflow: hidden;
+  position: fixed;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 600px) {
-    .fullScreen {
-        width: 100%;
-        height: 100%;
+  .fullScreen {
+    width: 100%;
+    height: 100%;
 
-        background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 
-        border: 20px white solid;
+    border: 20px white solid;
 
-        padding: 20px;
-    }
+    padding: 20px;
+  }
 
+  .fullScreenGrid {
+    margin: auto;
+    padding: 10px;
+
+    height: 100vh;
+    overflow: scroll auto;
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      '. .... .'
+      '. image .'
+      '. text .'
+      '. ... . ';
+    justify-items: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 2000px) {
     .fullScreenGrid {
-        margin: auto;
-        padding: 10px;
+      padding: 10px;
 
-        height: 100vh;
-        overflow: scroll auto;
-
-        background-color: rgba(255, 255, 255, 0.7);
-
-        display: grid;
-
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas:
-            '. .... .'
-            '. image .'
-            '. text .'
-            '. ... . ';
-        justify-items: center;
-        align-items: center;
+      height: 100vh;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'image text';
+      justify-items: center;
+      align-items: center;
     }
+  }
 
-    @media screen and (min-width: 2000px) {
-        .fullScreenGrid {
-            padding: 10px;
+  .fullScreenImage {
+    width: 100%;
+    min-width: 700px;
+    grid-area: image;
+  }
 
-            height: 100vh;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 'image text';
-            justify-items: center;
-            align-items: center;
-        }
-    }
+  .fullScreenText {
+    width: 100%;
+    background: white;
+    grid-area: text;
+    padding: 40px;
 
-    .fullScreenImage {
-        width: 100%;
-        min-width: 700px;
-        grid-area: image;
-    }
-
-    .fullScreenText {
-        width: 100%;
-        background: white;
-        grid-area: text;
-        padding: 40px;
-
-        min-width: 700px;
-    }
+    min-width: 700px;
+  }
 }

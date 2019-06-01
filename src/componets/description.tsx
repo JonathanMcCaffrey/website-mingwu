@@ -1,5 +1,5 @@
-import * as React from "react";
-import styles from "../styles/_global.module.scss";
+import * as React from 'react';
+import styles from '../styles/_global.module.scss';
 
 interface ComponentProps {
   data: { about: any };

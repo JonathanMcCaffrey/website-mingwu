@@ -2,25 +2,25 @@
 }
 
 .top {
-    height: 95px;
+  height: 95px;
 
-    border-bottom: 6px black solid;
+  border-bottom: 6px black solid;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .title {
-    font-family: 'Rubik', 'Helvetica Neue', sans-serif;
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 400;
+  font-family: 'Rubik', 'Helvetica Neue', sans-serif;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
 
-    user-select: all;
+  user-select: all;
 }
 
 .title:hover {
-    color: orange;
+  color: orange;
 }

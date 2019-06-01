@@ -1,4 +1,4 @@
-import { BACKGROUND, DEBACKGROUND } from "../types";
+import { BACKGROUND, DEBACKGROUND } from '../types';
 
 export const background = () => ({
   type: BACKGROUND

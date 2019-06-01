@@ -1,150 +1,146 @@
 .collageGrid {
-    display: grid;
-
-    margin-top: 100px;
-
-    max-width: 99vw;
-
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-
-    grid-template-columns: 1fr;
-    align-items: center;
+  display: grid;
+  margin-top: 100px;
+  max-width: 99vw;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 
 @media only screen and (min-width: 480px) {
-    .collageGrid {
-        margin: auto;
-        padding: 50px;
-    }
+  .collageGrid {
+    margin: auto;
+    padding: 50px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .collageGrid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .collageGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
-    .collageGrid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .collageGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 1700px) {
-    .collageGrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+  .collageGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 2500px) {
-    .collageGrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+  .collageGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .collageButton .collageContainer {
-    max-width: 100vw;
-    margin: auto;
+  max-width: 100vw;
+  margin: auto;
 }
 
 .imageTitle {
-    background-color: rgba(255, 255, 255, 0.65);
-    margin-top: 40px;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    transition: all;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin-top: 40px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 
 @media only screen and (min-width: 1000px) {
-    .collageButton {
-        transform: scale(0.8);
+  .collageButton {
+    transform: scale(0.8);
 
-        transition: all;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-out;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
 
-        filter: blur(1px);
-        cursor: pointer;
-    }
+    filter: blur(1px);
+    cursor: pointer;
+  }
 
-    .collageButton:hover {
-        transform: scale(1.1);
-        z-index: 1;
-        filter: blur(0px);
-    }
+  .collageButton:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    filter: blur(0px);
+  }
 
-    .collageButton:nth-child(5n + 1):hover .collageContainer {
-        outline: #f35028 20px solid;
-    }
-    div + .collageButton:nth-child(5n + 2):hover .collageContainer {
-        outline: #f5dc16 20px solid;
-    }
-    .collageButton:nth-child(5n + 3):hover .collageContainer {
-        outline: #8f7960 20px solid;
-    }
-    .collageButton:nth-child(5n + 4):hover .collageContainer {
-        outline: #7eefc9 20px solid;
-    }
-    .collageButton:nth-child(5n + 5):hover .collageContainer {
-        outline: #d9167e 20px solid;
-    }
+  .collageButton:nth-child(5n + 1):hover .collageContainer {
+    outline: #f35028 20px solid;
+  }
+  div + .collageButton:nth-child(5n + 2):hover .collageContainer {
+    outline: #f5dc16 20px solid;
+  }
+  .collageButton:nth-child(5n + 3):hover .collageContainer {
+    outline: #8f7960 20px solid;
+  }
+  .collageButton:nth-child(5n + 4):hover .collageContainer {
+    outline: #7eefc9 20px solid;
+  }
+  .collageButton:nth-child(5n + 5):hover .collageContainer {
+    outline: #d9167e 20px solid;
+  }
 
-    .collageButton:nth-child(5n + 2) .collageContainer {
-        outline: #f35028 4px solid;
-    }
-    .collageButton:nth-child(5n + 3) .collageContainer {
-        outline: #f5dc16 4px solid;
-    }
-    .collageButton:nth-child(5n + 4) .collageContainer {
-        outline: #8f7960 4px solid;
-    }
-    .collageButton:nth-child(5n + 5) .collageContainer {
-        outline: #7eefc9 4px solid;
-    }
-    .collageButton:nth-child(5n + 1) .collageContainer {
-        outline: #d9167e 4px solid;
-    }
+  .collageButton:nth-child(5n + 2) .collageContainer {
+    outline: #f35028 4px solid;
+  }
+  .collageButton:nth-child(5n + 3) .collageContainer {
+    outline: #f5dc16 4px solid;
+  }
+  .collageButton:nth-child(5n + 4) .collageContainer {
+    outline: #8f7960 4px solid;
+  }
+  .collageButton:nth-child(5n + 5) .collageContainer {
+    outline: #7eefc9 4px solid;
+  }
+  .collageButton:nth-child(5n + 1) .collageContainer {
+    outline: #d9167e 4px solid;
+  }
 
-    .collageButton:nth-child(5n + 2) .imageTitle {
-        outline: #f35028 4px solid;
-    }
-    .collageButton:nth-child(5n + 3) .imageTitle {
-        outline: #f5dc16 4px solid;
-    }
-    .collageButton:nth-child(5n + 4) .imageTitle {
-        outline: #8f7960 4px solid;
-    }
-    .collageButton:nth-child(5n + 5) .imageTitle {
-        outline: #7eefc9 4px solid;
-    }
-    .collageButton:nth-child(5n + 1) .imageTitle {
-        outline: #d9167e 4px solid;
-    }
+  .collageButton:nth-child(5n + 2) .imageTitle {
+    outline: #f35028 4px solid;
+  }
+  .collageButton:nth-child(5n + 3) .imageTitle {
+    outline: #f5dc16 4px solid;
+  }
+  .collageButton:nth-child(5n + 4) .imageTitle {
+    outline: #8f7960 4px solid;
+  }
+  .collageButton:nth-child(5n + 5) .imageTitle {
+    outline: #7eefc9 4px solid;
+  }
+  .collageButton:nth-child(5n + 1) .imageTitle {
+    outline: #d9167e 4px solid;
+  }
 
-    .collageButton:nth-child(5n + 1):hover .imageTitle {
-        //background-color: #f35028;
-        background-color: rgba(243, 80, 40, 0.65);
-    }
-    .collageButton:nth-child(5n + 2):hover .imageTitle {
-        //background-color: #f5dc16;
-        background-color: rgba(245, 220, 22, 0.65);
-    }
-    .collageButton:nth-child(5n + 3):hover .imageTitle {
-        //background-color: #8f7960;
-        background-color: rgba(143, 121, 96, 0.65);
-    }
-    .collageButton:nth-child(5n + 4):hover .imageTitle {
-        //background-color: #7eefc9;
-        background-color: rgba(126, 239, 201, 0.65);
-    }
-    .collageButton:nth-child(5n + 5):hover .imageTitle {
-        //background-color: #d9167e;
+  .collageButton:nth-child(5n + 1):hover .imageTitle {
+    //background-color: #f35028;
+    background-color: rgba(243, 80, 40, 0.65);
+  }
+  .collageButton:nth-child(5n + 2):hover .imageTitle {
+    //background-color: #f5dc16;
+    background-color: rgba(245, 220, 22, 0.65);
+  }
+  .collageButton:nth-child(5n + 3):hover .imageTitle {
+    //background-color: #8f7960;
+    background-color: rgba(143, 121, 96, 0.65);
+  }
+  .collageButton:nth-child(5n + 4):hover .imageTitle {
+    //background-color: #7eefc9;
+    background-color: rgba(126, 239, 201, 0.65);
+  }
+  .collageButton:nth-child(5n + 5):hover .imageTitle {
+    //background-color: #d9167e;
 
-        background-color: rgba(217, 22, 126, 0.65);
-    }
+    background-color: rgba(217, 22, 126, 0.65);
+  }
 }

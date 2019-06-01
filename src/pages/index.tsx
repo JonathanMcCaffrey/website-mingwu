@@ -1,12 +1,12 @@
-import { graphql } from "gatsby";
-import * as React from "react";
-import { Helmet } from "react-helmet";
-import Layout from "../layouts";
-import { Provider } from "react-redux";
-import { ParallaxProvider } from "react-scroll-parallax";
-import FrontPage from "../componets/frontpage";
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+import Layout from '../layouts';
+import { Provider } from 'react-redux';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import FrontPage from '../componets/frontpage';
 
-import store from "../store";
+import store from '../store';
 interface PageProps {
   data: {
     imageTitle: any;

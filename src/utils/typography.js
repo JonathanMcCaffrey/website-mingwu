@@ -1,5 +1,5 @@
-import Typography from "typography"
-import theme from "typography-theme-bootstrap"
+import Typography from 'typography';
+import theme from 'typography-theme-bootstrap';
 
 theme.overrideThemeStyles = ({ rhythm, scale }, options) => {
   return {
@@ -52,14 +52,14 @@ theme.overrideThemeStyles = ({ rhythm, scale }, options) => {
       content: `" " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23000000'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E")`,
     },
     */
-  }
-}
+  };
+};
 
-const typography = new Typography(theme)
+const typography = new Typography(theme);
 
 // Back out the below once Typography is upgraded for es6
-export default typography
+export default typography;
 
-export const rhythm = typography.rhythm
-export const scale = typography.scale
-export const options = typography.options
+export const rhythm = typography.rhythm;
+export const scale = typography.scale;
+export const options = typography.options;

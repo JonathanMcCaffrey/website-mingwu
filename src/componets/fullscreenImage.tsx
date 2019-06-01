@@ -1,9 +1,8 @@
-import Img from "gatsby-image";
-import * as React from "react";
-import { connect } from "react-redux";
-import * as galleryActions from "../actions/galleryActions";
-import styles from "../styles/_global.module.scss";
-import { applyMiddleware } from "redux";
+import Img from 'gatsby-image';
+import * as React from 'react';
+import { connect } from 'react-redux';
+import * as galleryActions from '../actions/galleryActions';
+import styles from '../styles/_global.module.scss';
 
 interface ComponentProps {
   data: {
@@ -91,17 +90,17 @@ class Component extends React.Component<ComponentProps, {}> {
     if (this.props.state.gallery && this.props.state.gallery.length > 0) {
       return this.props.state.gallery[this.props.state.gallery.length - 1].id;
     } else {
-      return "";
+      return '';
     }
   };
 
   componentDidMount() {
     this.updateWindowDimensions();
-    window.addEventListener("resize", this.updateWindowDimensions);
+    window.addEventListener('resize', this.updateWindowDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWindowDimensions);
+    window.removeEventListener('resize', this.updateWindowDimensions);
   }
 
   updateWindowDimensions = () => {};

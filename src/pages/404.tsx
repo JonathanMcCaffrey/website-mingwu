@@ -1,4 +1,4 @@
-import * as React from 'react'
-import Layout from '../layouts'
+import * as React from 'react';
+import Layout from '../layouts';
 
-export default () => <Layout>404</Layout>
+export default () => <Layout>404</Layout>;

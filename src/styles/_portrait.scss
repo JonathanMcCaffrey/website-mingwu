@@ -1,46 +1,46 @@
 .portrait {
-    background-color: pink;
+  background-color: pink;
 }
 
 .portraitBackground {
-    background-attachment: fixed;
-    background-size: 0 0;
-    overflow: hidden;
+  background-attachment: fixed;
+  background-size: 0 0;
+  overflow: hidden;
 
-    background-color: pink;
-    overflow: hidden;
-    height: 1000px;
+  background-color: pink;
+  overflow: hidden;
+  height: 1000px;
 }
 
 .portraitElementContainer {
-    width: 100%;
-    height: 100%;
-    margin-bottom: -100%;
-    margin-right: -100%;
-    transform: scale(0.75);
+  width: 100%;
+  height: 100%;
+  margin-bottom: -100%;
+  margin-right: -100%;
+  transform: scale(0.75);
 }
 
 .portraitElementContainer .camera {
-    // transition: all 2s ease-in-out;
+  // transition: all 2s ease-in-out;
 }
 
 .portraitElementContainer:hover .camera {
-    //transform: scale(1.4) rotate(1080deg);
+  //transform: scale(1.4) rotate(1080deg);
 }
 
 .portraitBackWall {
-    margin-top: 10px;
-    margin-left: -20px;
+  margin-top: 10px;
+  margin-left: -20px;
 
-    width: 100%;
-    height: 100%;
-    margin-bottom: calc(-100% - 10px);
-    margin-right: calc(-100% + 20px);
+  width: 100%;
+  height: 100%;
+  margin-bottom: calc(-100% - 10px);
+  margin-right: calc(-100% + 20px);
 }
 
 .pinkball {
-    margin-right: -40px;
-    bottom: -340px;
-    margin-left: auto;
-    position: relative;
+  margin-right: -40px;
+  bottom: -340px;
+  margin-left: auto;
+  position: relative;
 }
