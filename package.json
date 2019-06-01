@@ -80,5 +80,7 @@
     "tslint-react": "^3.6.0",
     "typescript": "^2.9.1",
     "typings-for-css-modules-loader": "^1.7.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/JonathanMcCaffrey/website-mingwu.git"
 }
